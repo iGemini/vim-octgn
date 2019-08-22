@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="The Birth of Carthaal" id="9AEB5C4A-0C83-4F07-B125-DAF2FF40E837" gameId="95ED6F66-48A1-45CD-AA94-1DB01D235FFE" gameVersion="0.0.0.1" version="1.0">
+	<cards>
+		<card id="50D634AA-9AED-4583-81D6-C3097C090271" name="Sheila: Druid of Life" >
+			<property name="Card Type" value="Servant" />
+			<property name="JP" value="3" />
+			<property name="Job Name" value="Cleric" />
+			<property name="Sustain" value="4" />
+			<property name="Champion Ability" value="Start the game with 10 additional JP" />
+			<property name="Skill" value="" />
+			<property name="Attack" value="2" />
+			<property name="Health" value="6" />
+			<property name="Card Text" value="Whenever a servant enters the battlefield under you or your teammate's control, gain X vitality." />
+			<property name="Type" value="Druid" />
+			<property name="Faction" value="Arboria" />
+			<property name="Critical Weakness" value="If your Paragon has full Vitality, all battle damage inflicted on this servant is doubled." />
+			<property name="Favor" value="6" />
+			<property name="Flavor Text" value="She uses her life giving blessings on all those who are friends, and serve the same cause." />
+		</card>
+		<card id="3CD2A70C-5597-4C4C-A0E7-60677BC2DA6E" name="Construct the Aqueducts" >
+			<property name="Card Type" value="Skill" />
+			<property name="JP" value="5" />
+			<property name="Job Name" value="Constructor" />
+			<property name="Sustain" value="2" />
+			<property name="Champion Ability" value="" />
+			<property name="Skill" value="Blueprint" />
+			<property name="Attack" value="" />
+			<property name="Health" value="" />
+			<property name="Card Text" value="Draw one card from your Environment deck." />
+			<property name="Type" value="" />
+			<property name="Faction" value="Arboria" />
+			<property name="Critical Weakness" value="" />
+			<property name="Favor" value="3" />
+			<property name="Flavor Text" value="The Rook could never have survived the harsh summers without them" />
+		</card>
+		<card id="F270B949-D30F-4E87-BB24-CA6B22F2E867" name="Fen" >
+			<property name="Card Type" value="Environment" />
+			<property name="JP" value="" />
+			<property name="Job Name" value="" />
+			<property name="Sustain" value="" />
+			<property name="Champion Ability" value="" />
+			<property name="Skill" value="" />
+			<property name="Attack" value="" />
+			<property name="Health" value="" />
+			<property name="Card Text" value="This is a Fen Environment card." />
+			<property name="Type" value="" />
+			<property name="Faction" value="" />
+			<property name="Critical Weakness" value="" />
+			<property name="Favor" value="" />
+			<property name="Flavor Text" value="" />			
+		</card>
+		<card id="49DB0ECB-CB71-453C-8789-AF2002C07B88" name="Moving Wall" >
+			<property name="Card Type" value="Servant" />
+			<property name="JP" value="10" />
+			<property name="Job Name" value="Constructor" />
+			<property name="Sustain" value="10" />
+			<property name="Champion Ability" value="Once per game, you may destroy an Environment card." />
+			<property name="Skill" value="" />
+			<property name="Attack" value="10" />
+			<property name="Health" value="10" />
+			<property name="Card Text" value="Reduce the attack of all servants attacking this servant by X until the end of combat." />
+			<property name="Type" value="Construct" />
+			<property name="Faction" value="Arboria" />
+			<property name="Critical Weakness" value="Any servant with favor 4 ignores this card's effect." />
+			<property name="Favor" value="10" />
+			<property name="Flavor Text" value="It's fast." />
+		</card>
+		<card id="A03644FF-C865-483C-99DD-5FD9670F16A4" name="In Thorns' Clutches" >
+			<property name="Card Type" value="Skill" />
+			<property name="JP" value="6" />
+			<property name="Job Name" value="" />
+			<property name="Sustain" value="3" />
+			<property name="Champion Ability" value="" />
+			<property name="Skill" value="" />
+			<property name="Attack" value="" />
+			<property name="Health" value="" />
+			<property name="Card Text" value="Select an attacking servant, inflict Wound 1, and remove it from combat." />
+			<property name="Type" value="Trap" />
+			<property name="Faction" value="Arboria" />
+			<property name="Critical Weakness" value="" />
+			<property name="Favor" value="2" />
+			<property name="Flavor Text" value="" />
+		</card>
+		<card id="B071ED21-A1DC-4C72-B31C-51BA1A7155FE" name="Caustic Spitter" >
+			<property name="Card Type" value="Servant" />
+			<property name="JP" value="" />
+			<property name="Job Name" value="Mystic" />
+			<property name="Sustain" value="5" />
+			<property name="Champion Ability" value="Once per game, restore +15 Health to a servant." />
+			<property name="Skill" value="" />
+			<property name="Attack" value="3" />
+			<property name="Health" value="12" />
+			<property name="Card Text" value="When this servant damages another servant with one or more armaments equipped to it, destroy those armaments." />
+			<property name="Type" value="Abomination" />
+			<property name="Faction" value="Arboria" />
+			<property name="Critical Weakness" value="" />
+			<property name="Favor" value="5" />
+			<property name="Flavor Text" value="" />
+		</card>
+	</cards>
+</set>

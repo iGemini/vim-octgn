@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<templates>
+	<blocks>
+		<block type="text" id="Name">
+			<location x="30" y="30" />
+			<text color="#000000" size="30" />
+			<wordwrap height="30" width="570" />
+		</block>
+		<block type="text" id="JP">
+			<location x="30" y="30" />
+			<text color="#000000" size="15" />
+			<wordwrap height="15" width="520" align="far" />
+		</block>
+		<block type="text" id="JobName">
+			<location x="30" y="50" />
+			<text color="#000000" size="15" />
+			<wordwrap height="15" width="540" align="far" />
+		</block>
+		<block type="text" id="Sustain">
+			<location x="30" y="30" />
+			<text color="#000000" size="15" />
+			<wordwrap height="15" width="570" align="far" />
+		</block>
+		<block type="text" id="ChampionAbility">
+			<location x="110" y="80" />
+			<text color="#000000" size="20" />
+			<wordwrap height="50" width="400" />
+		</block>
+		<block type="text" id="Skill">
+			<location x="30" y="70" />
+			<text color="#000000" size="20" />
+			<wordwrap height="20" width="570" />
+		</block>
+		<block type="text" id="Attack">
+			<location x="30" y="140" />
+			<text color="#000000" size="15" />
+			<wordwrap height="15" width="570" />
+		</block>
+		<block type="text" id="Health">
+			<location x="30" y="140" />
+			<text color="#000000" size="15" />
+			<wordwrap height="15" width="570" align="far" />
+		</block>
+		<block type="text" id="CardText">
+			<location x="30" y="500" />
+			<text color="#000000" size="21" />
+			<wordwrap height="227" width="570" />
+		</block>
+		<block type="text" id="TypeFaction">
+			<location x="30" y="750" />
+			<text color="#000000" size="18" />
+			<wordwrap height="18" width="570" />
+		</block>
+		<block type="text" id="CriticalWeakness">
+			<location x="160" y="770" />
+			<text color="#000000" size="18" />
+			<wordwrap height="60" width="300" />
+		</block>
+		<block type="text" id="Favor">
+			<location x="30" y="800" />
+			<text color="#000000" size="18" />
+			<wordwrap height="18" width="570" align="far" />
+		</block>
+	</blocks>
+	<template src="proxy/Servant.png" default="True">
+		<matches>
+			<match name="Card Type" value="Servant" />
+		</matches>
+		<textblocks>
+			<link block="Name">
+				<property name="Name" />
+			</link>
+			<link block="JP">
+				<property name="JP" />
+			</link>
+			<link block="JobName">
+				<property name="Job Name" />
+			</link>
+			<link block="Sustain">
+				<property name="Sustain" />
+			</link>
+			<link block="ChampionAbility">
+				<property name="Champion Ability" />
+			</link>
+			<link block="Attack">
+				<property name="Attack" />
+			</link>
+			<link block="Health">
+				<property name="Health" />
+			</link>
+			<link block="CardText">
+				<property name="Card Text" />
+			</link>
+			<link block="TypeFaction" separator=" - ">
+				<property name="Type" />
+				<property name="Faction" />
+			</link>
+			<link block="CriticalWeakness">
+				<property name="Critical Weakness" />
+			</link>
+			<link block="Favor">
+				<property name="Favor" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/Skill.png" >
+		<matches>
+			<match name="Card Type" value="Skill"/>
+		</matches>
+		<textblocks>
+			<link block="Name">
+				<property name="Name" />
+			</link>
+			<link block="JP">
+				<property name="JP" />
+			</link>
+			<link block="JobName">
+				<property name="Job Name" />
+			</link>
+			<link block="Sustain">
+				<property name="Sustain" />
+			</link>
+			<link block="Skill">
+				<property name="Skill" />
+			</link>
+			<link block="CardText">
+				<property name="Card Text" />
+			</link>
+			<link block="TypeFaction" separator=" - ">
+				<property name="Type" />
+				<property name="Faction" />
+			</link>
+			<link block="Favor">
+				<property name="Favor" />
+			</link>
+		</textblocks>
+	</template>
+	<template src="proxy/Environment.png" >
+		<matches>
+			<match name="Card Type" value="Environment"/>
+		</matches>
+		<textblocks>
+			<link block="Name">
+				<property name="Name" />
+			</link>
+			<link block="CardText">
+				<property name="Card Text" />
+			</link>
+			<link block="TypeFaction" separator=" - ">
+				<property name="Type" />
+				<property name="Faction" />
+			</link>
+		</textblocks>
+	</template>
+</templates>

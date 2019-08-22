@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<set name="Markers" id="0B2CE679-DD7A-40DB-9C80-2453E3981AFF" gameId="95ED6F66-48A1-45CD-AA94-1DB01D235FFE" gameVersion="0.0.0.1" version="1.0">
+	<markers>
+		<marker id="3A19FC59-9119-4DEC-8C90-7FD2A1229380" name="Damage" />
+		<marker id="F5BB27F0-2A05-438D-BDED-09533D375AA1" name="Rank" />
+	</markers>
+</set>

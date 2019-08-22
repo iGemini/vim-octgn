@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<game xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+			id="95ED6F66-48A1-45CD-AA94-1DB01D235FFE" 
+			version="0.0.0.2" 
+			octgnVersion="3.3.132.0" 
+			scriptVersion="3.1.0.2"
+			name="Vim" 
+			description="Vim"
+			tags="vim" 
+			authors="piqueaboo (Design), Gemini (OCTGN module)"
+			setsurl="" 
+			gameurl="https://github.com/iGemini/vim"
+			iconurl="https://raw.githubusercontent.com/iGemini/vim/master/src/art/logo.jpg"
+			markersize="12"  >
+	<scripts>
+		<script src="scripts/actions.py" />
+	</scripts>
+	<events>
+	</events>
+	<proxygen definitionsrc="proxy/proxygendef.xml">
+	</proxygen>
+	<card front="cards/front.png" back="cards/back.png" width="63" height="88" cornerRadius="3">
+		<property name="Card Type" type="String" />
+		<property name="JP" type="Integer" />
+		<property name="Job Name" type="String" />
+		<property name="Sustain" type="Integer" />
+		<property name="Champion Ability" type="String" />
+		<property name="Skill" type="String" />
+		<property name="Attack" type="Integer" />
+		<property name="Health" type="Integer" />
+		<property name="Card Text" type="String" />
+		<property name="Type" type="String" />
+		<property name="Faction" type="String" />
+		<property name="Critical Weakness" type="String" />
+		<property name="Favor" type="Integer" />
+		<property name="Flavor Text" type="String" />
+	</card>
+	<table name="Table" visibility="undefined" width="640" height="480" background="background/background.jpg" backgroundStyle="uniformToFill">
+		<cardaction menu="Flip Card" execute="FlipCard" />
+		<cardactions menu="Add/Remove Counters...">
+			<cardaction menu="Add Damage Counter" execute="AddDamageMarker" />
+			<cardaction menu="Remove Damage Counter" execute="RemoveDamageMarker" />
+			<cardaction menu="Add Rank Counter" execute="AddRankMarker" />
+			<cardaction menu="Remove Rank Counter" execute="RemoveRankMarker" />
+			<cardaction menu="Add Other Counter..." execute="AddMarker" />
+		</cardactions>
+		<cardaction menu="Place in Hand" execute="PlaceInHand" />
+		<cardseparator />
+		<cardaction menu="Shuffle into Servant Deck" execute="ShuffleIntoServantDeck" />
+		<cardaction menu="Place on top of Servant Deck" execute="PlaceOnTopOfServantDeck" />
+		<cardaction menu="Place in [x] postion in Servant Deck" execute="MoveToPositionServantDeck" />
+		<cardseparator />
+		<cardaction menu="Shuffle into Skill Deck" execute="ShuffleIntoSkillDeck" />
+		<cardaction menu="Place on top of Skill Deck" execute="PlaceOnTopOfSkillDeck" />
+		<cardaction menu="Place in [x] postion in Skill Deck" execute="MoveToPositionSkillDeck" />
+		<cardseparator />
+		<cardaction menu="Shuffle into Environment Deck" execute="ShuffleIntoEnvironmentDeck" />
+		<cardaction menu="Place on top of Environment Deck" execute="PlaceOnTopOfEnvironmentDeck" />
+		<cardaction menu="Place in [x] postion in Environment Deck" execute="MoveToPositionEnvironmentDeck" />
+		<cardseparator />
+		<cardaction menu="Send to the Void" execute="MoveToVoid" />
+		<cardaction menu="Give Control" execute="GiveControl" />
+		<groupaction menu="Flip a Coin" execute="FlipCoin" />
+		<groupaction menu="Peek [x] from opponent's Hand" execute="PeekXOpponent" />
+	</table>
+	<player summary="Vit:{#Vitality}">
+		<counter name="Vitality" icon="counters/life.png" default="20" />
+		<hand name="Hand" visibility="me" icon="groups/hand.png">
+			<cardaction menu="Play Face Up" execute="PlayFaceUp" />
+			<cardaction menu="Play Face Down" execute="PlayFaceDown" />
+			<cardseparator />
+			<cardaction menu="Shuffle into Servant Deck" execute="ShuffleIntoServantDeck" />
+			<cardaction menu="Place on top of Servant Deck" execute="PlaceOnTopOfServantDeck" />
+			<cardaction menu="Place in [x] postion in Servant Deck" execute="MoveToPositionServantDeck" />
+			<cardseparator />
+			<cardaction menu="Shuffle into Skill Deck" execute="ShuffleIntoSkillDeck" />
+			<cardaction menu="Place on top of Skill Deck" execute="PlaceOnTopOfSkillDeck" />
+			<cardaction menu="Place in [x] postion in Skill Deck" execute="MoveToPositionSkillDeck" />
+			<cardseparator />
+			<cardaction menu="Shuffle into Environment Deck" execute="ShuffleIntoEnvironmentDeck" />
+			<cardaction menu="Place on top of Environment Deck" execute="PlaceOnTopOfEnvironmentDeck" />
+			<cardaction menu="Place in [x] postion in Environment Deck" execute="MoveToPositionEnvironmentDeck" />
+			<groupaction menu="Reveal [x]" execute="RevealX" />
+		</hand>
+		<group name="Servant Deck" visibility="none" icon="groups/stack.png">
+			<cardaction menu="Place in Hand" execute="PlaceInHand" />
+			<cardaction menu="Reveal Card" execute="RevealCard" />
+			<groupaction menu="Draw" execute="Draw" />
+			<groupaction menu="Shuffle Servant Deck" execute="Shuffle" />
+			<groupaction menu="Peek [x]" execute="PeekX" />
+			<groupaction menu="View Deck" execute="ViewDeck" />
+			<groupaction menu="Send [x] cards to the Void" execute="MoveXToVoid" />
+			<groupaction menu="Reveal Top Card" execute="RevealTopCard" />
+		</group>
+		<group name="Skill Deck" visibility="none" icon="groups/stack.png">
+			<cardaction menu="Place in Hand" execute="PlaceInHand" />
+			<cardaction menu="Reveal Card" execute="RevealCard" />
+			<groupaction menu="Draw" execute="Draw" />
+			<groupaction menu="Shuffle Skill Deck" execute="Shuffle" />
+			<groupaction menu="Peek [x]" execute="PeekX" />
+			<groupaction menu="View Deck" execute="ViewDeck" />
+			<groupaction menu="Send [x] cards to the Void" execute="MoveXToVoid" />
+			<groupaction menu="Reveal Top Card" execute="RevealTopCard" />
+		</group>
+		<group name="Environment Deck" visibility="none" icon="groups/stack.png">
+			<cardaction menu="Place in Hand" execute="PlaceInHand" />
+			<cardaction menu="Reveal Card" execute="RevealCard" />
+			<groupaction menu="Draw" execute="Draw" />
+			<groupaction menu="Shuffle Environment Deck" execute="Shuffle" />
+			<groupaction menu="Peek [x]" execute="PeekX" />
+			<groupaction menu="View Deck" execute="ViewDeck" />
+			<groupaction menu="Send [x] cards to the Void" execute="MoveXToVoid" />
+			<groupaction menu="Reveal Top Card" execute="RevealTopCard" />
+		</group>
+		<group name="Void" visibility="all" icon="groups/stack.png">
+			<cardaction menu="Place in Hand" execute="PlaceInHand" />
+			<cardaction menu="Play Face Up" execute="PlayFaceUp" />
+			<cardaction menu="Reveal Card" execute="RevealCard" />
+			<groupaction menu="View Void" execute="ViewDeck" />
+		</group>
+	</player>
+	<deck>
+		<section name="Servant Deck" group="Servant Deck" />
+		<section name="Skill Deck" group="Skill Deck" />
+		<section name="Environment Deck" group="Environment Deck" />
+	</deck>
+</game>
